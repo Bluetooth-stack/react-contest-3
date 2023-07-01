@@ -130,6 +130,10 @@
     gap: 24px;
 }
 
+.cartContainer .cartEmpty{
+    margin: 180px auto;
+}
+
 .sidebarContainer{
     position: fixed;
     display: flex;
@@ -183,3 +187,4 @@
     align-items: center;
     padding: 5px 0;
 }
+

@@ -20,7 +20,7 @@ const Sidebar = () => {
         setTimeout(() => {
             alert('Items have been checked out successfully.');
             navigate('/');
-        }, 1000);
+        }, 800);
     }
 
     return (
@@ -37,7 +37,7 @@ const Sidebar = () => {
                             </div>
                         ))
                     }
-                </div>:<h5 className="empty">Empty</h5>
+                </div>:<h5 className="empty">Empty!</h5>
             }
             <div className="total">
                 <h4>Total</h4>
@@ -45,7 +45,7 @@ const Sidebar = () => {
                     products.length > 0?<p>${sum}</p>:<p>$0</p>
                 }
             </div>
-            <button className="checkout" onClick={(e)=>{checkOutBtn()}}>Checkout</button>
+            <button className="checkout" onClick={()=>{checkOutBtn()}}>Checkout</button>
         </div>
     )
 }

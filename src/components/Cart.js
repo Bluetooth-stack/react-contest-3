@@ -12,7 +12,7 @@ const Cart = () => {
         <div className="mainCart">
             <div className="cartContainer">
                 {
-                    (products.length > 0) && products.map((product) => (
+                    (products.length > 0)? products.map((product) => (
                         <div className="card" key={product.id}>
                             <img className="thumbnail" src={product.thumbnail} alt={product.title}></img>
                             <div className="info">
@@ -22,7 +22,7 @@ const Cart = () => {
                             <p className="desc">{product.description.substring(0, 62)}...</p>
                             <button className="add" onClick={() => { dispatch(removeFromCart(product.id))}}>Remove from Cart</button>
                         </div>
-                    ))
+                    )):<h2 className="cartEmpty">Your cart is empty!</h2>
                 }
             </div>
             <Sidebar />
