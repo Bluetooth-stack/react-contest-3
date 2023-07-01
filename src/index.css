@@ -5,6 +5,8 @@
 }
 
 .navbar{
+    position: sticky;
+    top: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -15,7 +17,7 @@
 }
 
 .links{
-    width: 12%;
+    width: 14%;
     padding-right: 18px;
     display: flex;
     justify-content: space-around;
@@ -31,7 +33,7 @@
 }
 
 .links a:hover{
-    transform: translateY(-2.5px);
+    transform: translateY(-4px);
     border-bottom: 2px solid white;
 }
 
